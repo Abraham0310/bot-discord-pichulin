@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Credenciales y Canales
 CANAL_A_CUIDAR_ID = 1421926883179757637
-TOKEN_BOT = 'MTUwODkxMjQ5MTQ4MzM2NTQ4Ng.GqZBHB.O6Ijl-wa_sLnk2NyJFKvD4vD4JqAQgAwfvi21o'
+TOKEN_BOT = os.environ.get('DISCORD_TOKEN')
 
 # --- SERVIDOR WEB INTEGRADO PARA ENGAÑAR A RENDER ---
 async def handle(request):
